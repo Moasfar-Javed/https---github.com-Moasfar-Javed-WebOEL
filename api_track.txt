@@ -1,0 +1,46 @@
+1. get all users
+
+http://localhost:5000/api/users
+
+2. get one user by email and pass (for login)
+
+http://localhost:5000/api/login?email=<insert>&password=<insert>
+
+3. delete user (use put)
+
+http://localhost:5000/api/users?name=name
+
+4. add a user
+
+http://localhost:5000/api/users
+
+{
+	"name": "diyan ali",
+	"email": "da@gmail.com",
+	"password": "admin"
+}
+
+
+-- PROPERTY -- 
+
+1. get unrented properties
+
+http://localhost:5000/api/properties
+
+2. get property by id
+
+http://localhost:5000/api/prop>id=<insert>
+
+2. rent a property (use put)
+
+http://localhost:5000/api/properties?id=<insert>&renter_id=<insert>
+
+3. add a property
+
+http://localhost:5000/api/properties?id=<insert>&renter_id=<insert>
+
+{
+	"name": "gulshan heights",
+	"description": "2 bed appartment",
+	"owner_id": "63c6a5ee8c328b8bf408c2e0"
+}
